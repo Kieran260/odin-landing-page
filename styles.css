@@ -14,16 +14,18 @@ body {
     text-align: center;
 }
 
-.header, .hero-section {
+.header, .hero-container {
     background-color: #1F2937;
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 8px;
-    
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 16px;
 }
 
 .left-header {
@@ -33,21 +35,18 @@ body {
 }
 
 .right-header {
-    gap: 16px;
+    gap: 24px;
     display: flex;
     font-size: 18px;
-}
-
-.hero-section {
-    display: flex;
-    height: 400px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .hero-container {
     display: flex;
     flex-wrap: wrap;
+    min-height: 400px;
+    max-height: 600px;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-hero {
@@ -70,6 +69,33 @@ body {
     width: 500px;
 }
 
+.hero-title {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-button {
+    padding: 8px 0;
+}
+
+#B1 {
+    height: 30px;
+    width: 120px;
+    border-radius: 8px;
+    background: #3882F6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #E5E7EB;
+    font-weight: 900;
+}
 
 ul {
     list-style-type: none;
