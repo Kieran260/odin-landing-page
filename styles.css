@@ -8,10 +8,10 @@
 body {
     font-family: Roboto, sans-serif;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     flex-direction: column;
-    text-align: center;
+    text-align: center;    
 }
 
 .header, .hero-container {
@@ -20,11 +20,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 8px;
-    padding-left: 10%;
-    padding-right: 10%;
     gap: 16px;
 }
 
@@ -37,14 +35,13 @@ body {
 .right-header {
     gap: 24px;
     display: flex;
-    font-size: 18px;
 }
 
 .hero-container {
     display: flex;
     flex-wrap: wrap;
     min-height: 400px;
-    max-height: 600px;
+    max-height: 800px;
     align-items: center;
     justify-content: center;
 }
@@ -60,7 +57,7 @@ body {
 }
 
 .right-hero {
-    display:flex;
+    display: flex;
     margin: 16px;
 }
 
@@ -84,7 +81,7 @@ body {
     padding: 8px 0;
 }
 
-#B1 {
+.b1 {
     height: 30px;
     width: 120px;
     border-radius: 8px;
@@ -95,6 +92,48 @@ body {
     font-size: 16px;
     color: #E5E7EB;
     font-weight: 900;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-border {
+    border: 4px solid #3882F6;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 32px 32px;
+    width: 120px;
+    height: 120px;
+}
+
+.card-text {
+    text-align: center;
+    max-width: 160px;
+}
+
+
+
+.left-cards, .right-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
